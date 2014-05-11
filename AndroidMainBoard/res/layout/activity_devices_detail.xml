@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devices_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cen.android.mainboard.DevicesDetailActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="234dp"
+        android:layout_height="90dp"
+        android:text="TextView" />
+
+</FrameLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cen.android.mainboard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.cen.android.mainboard.DevicesListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.cen.android.mainboard.DevicesDetailActivity"
+            android:label="@string/title_devices_detail"
+            android:parentActivityName="org.cen.android.mainboard.DevicesListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cen.android.mainboard.DevicesListActivity" />
+        </activity>
+    </application>
+
+</manifest>
